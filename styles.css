@@ -1,0 +1,295 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+@font-face {
+  font-family: myFont;
+  src: url(Poppins-ExtraBoldItalic.ttf);
+}
+
+
+@media(max-width:768px){
+  body {
+    background-color: rgb(238, 235, 235);
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  .container {
+    background-color: white;
+    width: 90%;
+    height: 80vh;
+    position: absolute;
+    left: 5%;
+    top: 100px;
+    border-radius: 5% 5% 25% 5%;
+    padding: 50px 10px 10px 10px;
+    
+  }
+  .form {
+    position: relative;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .grid-div {
+    position: relative;
+  
+    
+  }
+  .label {
+    color: hsl(0, 1%, 44%);
+    font-size: 11px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    position: absolute;
+    left: 5px;
+    top: -15px;
+  }
+/* the label error color */
+  .label2{
+    color:hsl(0, 100%, 67%) ;
+  }
+  .input {
+    display: flex;
+    
+    border: 1px solid lightgrey;
+    padding: 15px;
+    margin: 5px;
+    margin-left:0;
+    width: 60%;
+    border-radius: 5px;
+  }
+
+  
+/* input error */
+  .input-error{
+    border: 1px solid hsl(0, 100%, 67%);
+  }
+
+  ::placeholder {
+    color: hsl(0, 1%, 44%);
+    font-size: 15px;
+  }
+
+  .error-message{
+    font-size: 8.5px;
+    color:  hsl(0, 100%, 67%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 40px;
+    visibility: hidden;
+  }
+  .error-message2{
+    visibility: visible;
+  }
+  .section-123 {
+    position: relative;
+  }
+#hr{
+  width: 80%;
+  position: relative;
+  right: 8%;
+}
+  .btn {
+    width: 70px;
+    height: 70px;
+    border-radius: 70%;
+    border: none;
+    background-color: hsl(259, 100%, 65%);
+    position: absolute;
+    left: 77%;
+    top: 85px;
+    z-index: 10;
+  }
+  .btn:hover {
+    background-color: hsl(0, 0%, 8%);
+    cursor: pointer;
+  }
+
+  .svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .calculated {
+    /* border: 1px solid black; */
+    padding: 10px;
+    margin-top: 30px;
+  }
+
+  .span-div {
+    display: block;
+
+    position: relative;
+    right: 0px;
+
+    color: hsl(0, 0%, 8%);
+    
+  }
+
+  .new-span {
+    font-family: myFont;
+    font-size: 70px;
+    color: hsl(259, 100%, 65%);
+  }
+  .span2 {
+    font-size: 60px;
+    font-family: myFont;
+    font-weight: 800;
+  }
+  .attribution {
+    position: relative;
+  }
+  .eyes {
+    position: absolute;
+    top: 700px;
+  }
+}
+@media (max-width: 375px) {
+  body {
+    background-color: rgb(238, 235, 235);
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  .container {
+    background-color: white;
+    width: 90%;
+    height: 65vh;
+    position: absolute;
+    left: 5%;
+    top: 100px;
+    border-radius: 5% 5% 25% 5%;
+    padding: 50px 10px 10px 10px;
+    
+  }
+  .form {
+    position: relative;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .grid-div {
+    position: relative;
+  }
+  .label {
+    color: hsl(0, 1%, 44%);
+    font-size: 11px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    position: absolute;
+    left: 5px;
+    top: -15px;
+  }
+/* the label error color */
+  .label2{
+    color:hsl(0, 100%, 67%) ;
+  }
+  .input {
+    display: block;
+    border: 1px solid lightgrey;
+    padding: 15px;
+    margin: 5px;
+    
+    width: 80%;
+    border-radius: 5px;
+  }
+/* input error */
+  .input-error{
+    border: 1px solid hsl(0, 100%, 67%);
+  }
+
+  ::placeholder {
+    color: hsl(0, 1%, 44%);
+    font-size: 15px;
+  }
+
+  .error-message{
+    font-size: 8.5px;
+    color:  hsl(0, 100%, 67%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 40px;
+    visibility: hidden;
+  }
+  .error-message2{
+    visibility: visible;
+  }
+  .section-123 {
+    position: relative;
+  }
+
+  #hr{
+    width: 100%;
+    position: relative;
+    right: -3px;
+  }
+  .btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 60%;
+    border: none;
+    background-color: hsl(259, 100%, 65%);
+    position: absolute;
+    left: 37%;
+    top: 90px;
+    z-index: 10;
+  }
+  .btn:hover {
+    background-color:hsl(0, 0%, 8%);
+    cursor: pointer;
+  }
+
+  .svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .calculated {
+    /* border: 1px solid black; */
+    padding: 10px;
+    margin-top: 30px;
+  }
+
+  .span-div {
+    display: block;
+
+    position: relative;
+    right: 10px;
+
+    color: hsl(0, 0%, 8%);
+    
+  }
+
+  .new-span {
+    font-family: myFont;
+    font-size: 50px;
+    color: hsl(259, 100%, 65%);
+  }
+  .span2 {
+    font-size: 50px;
+    font-family: myFont;
+    font-weight: 800;
+  }
+  .attribution {
+    position: relative;
+  }
+  .eyes {
+    position: absolute;
+    top: 650px;
+  }
+}
