@@ -7,9 +7,8 @@
   font-family: myFont;
   src: url(Poppins-ExtraBoldItalic.ttf);
 }
-
-
-@media(max-width:768px){
+ 
+@media(min-width:1440px){
   body {
     background-color: rgb(238, 235, 235);
     position: relative;
@@ -18,14 +17,14 @@
 
   .container {
     background-color: white;
-    width: 90%;
-    height: 80vh;
+    width: 50%;
+    min-height: 80vh;
+    height: auto;
     position: absolute;
-    left: 5%;
+    left: 25%;
     top: 100px;
     border-radius: 5% 5% 25% 5%;
     padding: 50px 10px 10px 10px;
-    
   }
   .form {
     position: relative;
@@ -39,8 +38,180 @@
 
   .grid-div {
     position: relative;
+  }
+  .label {
+    color: hsl(0, 1%, 44%);
+    font-size: 12px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    position: absolute;
+    left: 5px;
+    top: -15px;
+  }
   
+  .label2 {
+    color: hsl(0, 100%, 67%);
+  }
+  .input {
+    display: flex;
+
+    border: 1px solid lightgrey;
+    padding: 20px;
+    margin: 5px;
+    width: 60%;
+    border-radius: 5px;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }
+ 
+  .input-error {
+    border: 1px solid hsl(0, 100%, 67%);
+  }
+
+  ::placeholder {
+    color: hsl(0, 1%, 44%);
+    font-size: 15px;
+  }
+
+  .error-message {
+    font-size: 8.5px;
+    color: hsl(0, 100%, 67%);
+    display: flex;
+    text-align: center;
+    width: auto;
+    visibility: hidden;
+    margin-bottom: 40px;
     
+  }
+  .error-message2 {
+    visibility: visible;
+    text-align: center;
+    z-index: 10;
+  }
+
+  .new-error {
+    font-size: 8.5px;
+    color: hsl(0, 100%, 67%);
+    display: flex;
+    text-align: center;
+    width: auto;
+    margin-bottom: 40px;
+    
+    position: absolute;
+    top:60px;
+    left: 2px;
+    visibility: hidden;
+  }
+  .new-error2 {
+    visibility: visible;
+    text-align: center;
+    z-index: 10;
+  }
+
+  .move{
+    position: relative;
+    right: 50px;
+  }
+  .may{
+    position: relative;
+    right: 100px;
+  }
+  .section-123 {
+    position: relative;
+  }
+  #hr {
+    width: 80%;
+    position: relative;
+    right: 8%;
+  }
+  .btn {
+    width: 80px;
+    height: 80px;
+    border-radius: 80%;
+    border: none;
+    background-color: hsl(259, 100%, 65%);
+    position: absolute;
+    left: 80%;
+    top: 90px;
+    z-index: 10;
+  }
+  .btn:hover {
+    background-color: hsl(0, 0%, 8%);
+    cursor: pointer;
+  }
+
+  .svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .calculated {
+    
+    padding: 10px;
+    margin-top: 30px;
+  }
+
+  .span-div {
+    display: block;
+
+    position: relative;
+    right: 0px;
+
+    color: hsl(0, 0%, 8%);
+  }
+
+  .new-span {
+    font-family: myFont;
+    font-size: 70px;
+    color: hsl(259, 100%, 65%);
+    padding-left: 40px;
+  }
+  .span2 {
+    font-size: 60px;
+    font-family: myFont;
+    font-weight: 800;
+  }
+  .attribution {
+    position: relative;
+  }
+  .eyes {
+    position: absolute;
+    top: 700px;
+  }
+}
+
+ @media (max-width: 768px) {
+  body {
+    background-color: rgb(238, 235, 235);
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  .container {
+    background-color: white;
+    width: 90%;
+    height: auto;
+    position: absolute;
+    left: 5%;
+    top: 100px;
+    border-radius: 5% 5% 25% 5%;
+    padding: 50px 10px 10px 10px;
+  }
+  .form {
+    position: relative;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .grid-div {
+    position: relative;
   }
   .label {
     color: hsl(0, 1%, 44%);
@@ -51,24 +222,23 @@
     left: 5px;
     top: -15px;
   }
-/* the label error color */
-  .label2{
-    color:hsl(0, 100%, 67%) ;
+ 
+  .label2 {
+    color: hsl(0, 100%, 67%);
   }
   .input {
     display: flex;
-    
+
     border: 1px solid lightgrey;
     padding: 15px;
     margin: 5px;
-    margin-left:0;
+    margin-left: 0;
     width: 60%;
     border-radius: 5px;
   }
 
   
-/* input error */
-  .input-error{
+  .input-error {
     border: 1px solid hsl(0, 100%, 67%);
   }
 
@@ -77,27 +247,44 @@
     font-size: 15px;
   }
 
-  .error-message{
+  .error-message {
     font-size: 8.5px;
-    color:  hsl(0, 100%, 67%);
+    color: hsl(0, 100%, 67%);
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
+    text-align: center;
+    width: auto;
+    visibility: hidden;
+    margin-bottom: 90px;
+  }
+  .error-message2 {
+    visibility: visible;
+    text-align: center;
+  }
+
+  .new-error {
+    font-size: 8.5px;
+    color: hsl(0, 100%, 67%);
+    display: flex;
+    text-align: center;
+    width: auto;
     margin-bottom: 40px;
+    
+    position: absolute;
+    top:50px;
     visibility: hidden;
   }
-  .error-message2{
+  .new-error2 {
     visibility: visible;
+    text-align: center;
   }
   .section-123 {
     position: relative;
   }
-#hr{
-  width: 80%;
-  position: relative;
-  right: 8%;
-}
+  #hr {
+    width: 80%;
+    position: relative;
+    right: 8%;
+  }
   .btn {
     width: 70px;
     height: 70px;
@@ -106,7 +293,171 @@
     background-color: hsl(259, 100%, 65%);
     position: absolute;
     left: 77%;
-    top: 85px;
+    top: 135px;
+    z-index: 10;
+  }
+  .btn:hover {
+    background-color: hsl(0, 0%, 8%);
+    cursor: pointer;
+  }
+
+  .svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .calculated {
+     /* border: 1px solid black; 
+     padding: 10px; */
+    margin-top: 30px;
+  }
+
+  .span-div {
+    display: block;
+
+    position: relative;
+    right: 0px;
+
+    color: hsl(0, 0%, 8%);
+  }
+
+  .new-span {
+    font-family: myFont;
+    font-size: 70px;
+    color: hsl(259, 100%, 65%);
+  }
+  .span2 {
+    font-size: 60px;
+    font-family: myFont;
+    font-weight: 800;
+  }
+  .attribution {
+    position: relative;
+  }
+  .eyes {
+    position: absolute;
+    top: 750px;
+  }
+} 
+@media (max-width: 375px) {
+  body {
+    background-color: rgb(238, 235, 235);
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  .container {
+    background-color: white;
+    width: 90%;
+    height: auto;
+    position: absolute;
+    left: 5%;
+    top: 100px;
+    border-radius: 5% 5% 25% 5%;
+    padding: 50px 10px 10px 10px;
+  }
+  .form {
+    position: relative;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .grid-div {
+    position: relative;
+  }
+  .label {
+    color: hsl(0, 1%, 44%);
+    font-size: 11px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    position: absolute;
+    left: 5px;
+    top: -15px;
+  }
+  /* the label error color */
+  .label2 {
+    color: hsl(0, 100%, 67%);
+  }
+
+
+  .input {
+    display: block;
+    border: 1px solid lightgrey;
+    padding: 15px;
+    margin: 5px;
+
+    width: 80%;
+    border-radius: 5px;
+  }
+  .input::-webkit-outer-spin-button,
+  .input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* input error */
+  .input-error {
+    border: 1px solid hsl(0, 100%, 67%);
+  }
+
+  ::placeholder {
+    color: hsl(0, 1%, 44%);
+    font-size: 15px;
+  }
+
+  .error-message {
+    font-size: 8.5px;
+    color: hsl(0, 100%, 67%);
+    display: flex;
+    text-align: center;
+    width: auto;
+    visibility: hidden;
+    margin-bottom: 90px;
+  }
+  .error-message2 {
+    visibility: visible;
+    text-align: center;
+  }
+
+  .new-error {
+    font-size: 8.5px;
+    color: hsl(0, 100%, 67%);
+    display: flex;
+    text-align: center;
+    width: auto;
+    margin-bottom: 40px;
+    
+    position: absolute;
+    top:50px;
+    visibility: hidden;
+  }
+  .new-error2 {
+    visibility: visible;
+    text-align: center;
+  }
+
+  .section-123 {
+    position: relative;
+  }
+
+  #hr {
+    width: 100%;
+    position: relative;
+    right: -3px;
+  }
+  .btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 60%;
+    border: none;
+    background-color: hsl(259, 100%, 65%);
+    position: absolute;
+    left: 37%;
+    top: 140px;
     z-index: 10;
   }
   .btn:hover {
@@ -129,150 +480,9 @@
     display: block;
 
     position: relative;
-    right: 0px;
-
-    color: hsl(0, 0%, 8%);
-    
-  }
-
-  .new-span {
-    font-family: myFont;
-    font-size: 70px;
-    color: hsl(259, 100%, 65%);
-  }
-  .span2 {
-    font-size: 60px;
-    font-family: myFont;
-    font-weight: 800;
-  }
-  .attribution {
-    position: relative;
-  }
-  .eyes {
-    position: absolute;
-    top: 700px;
-  }
-}
-@media (max-width: 375px) {
-  body {
-    background-color: rgb(238, 235, 235);
-    position: relative;
-    overflow-x: hidden;
-  }
-
-  .container {
-    background-color: white;
-    width: 90%;
-    height: 65vh;
-    position: absolute;
-    left: 5%;
-    top: 100px;
-    border-radius: 5% 5% 25% 5%;
-    padding: 50px 10px 10px 10px;
-    
-  }
-  .form {
-    position: relative;
-  }
-  .wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-
-  .grid-div {
-    position: relative;
-  }
-  .label {
-    color: hsl(0, 1%, 44%);
-    font-size: 11px;
-    font-weight: bolder;
-    letter-spacing: 2px;
-    position: absolute;
-    left: 5px;
-    top: -15px;
-  }
-/* the label error color */
-  .label2{
-    color:hsl(0, 100%, 67%) ;
-  }
-  .input {
-    display: block;
-    border: 1px solid lightgrey;
-    padding: 15px;
-    margin: 5px;
-    
-    width: 80%;
-    border-radius: 5px;
-  }
-/* input error */
-  .input-error{
-    border: 1px solid hsl(0, 100%, 67%);
-  }
-
-  ::placeholder {
-    color: hsl(0, 1%, 44%);
-    font-size: 15px;
-  }
-
-  .error-message{
-    font-size: 8.5px;
-    color:  hsl(0, 100%, 67%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    margin-bottom: 40px;
-    visibility: hidden;
-  }
-  .error-message2{
-    visibility: visible;
-  }
-  .section-123 {
-    position: relative;
-  }
-
-  #hr{
-    width: 100%;
-    position: relative;
-    right: -3px;
-  }
-  .btn {
-    width: 60px;
-    height: 60px;
-    border-radius: 60%;
-    border: none;
-    background-color: hsl(259, 100%, 65%);
-    position: absolute;
-    left: 37%;
-    top: 90px;
-    z-index: 10;
-  }
-  .btn:hover {
-    background-color:hsl(0, 0%, 8%);
-    cursor: pointer;
-  }
-
-  .svg {
-    width: 30px;
-    height: 30px;
-  }
-
-  .calculated {
-    /* border: 1px solid black; */
-    padding: 10px;
-    margin-top: 30px;
-  }
-
-  .span-div {
-    display: block;
-
-    position: relative;
     right: 10px;
 
     color: hsl(0, 0%, 8%);
-    
   }
 
   .new-span {
@@ -290,6 +500,8 @@
   }
   .eyes {
     position: absolute;
-    top: 650px;
+    top: 750px;
+    padding: 10px;
+    margin: 20px;
   }
 }

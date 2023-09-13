@@ -17,37 +17,33 @@
   </head>
   <body>
     <div class="container">
-      <form  class="form">
+      <form class="form">
         <div class="wrapper">
           <div class="grid-div">
-            <label class="label" for="number">DAY</label>
+            <label class="label lad" for="number">DAY</label>
             <input
               class="input dd"
               id="day"
               type="number"
               name="dayInput"
               placeholder="DD"
-              
             />
-            <p class="error-message">Must be a valid day</p>
+            <p class="error-message">This field is required</p>
+            <p class="new-error guy">Must be a valid day</p>
+            <!-- <p>Must be a a valid date</p> -->
           </div>
 
           <div class="grid-div">
-            <label class="label" for="number">MONTH</label>
-            <input class="input" id="month" type="number" placeholder="MM"   />
-            <p class="error-message">Must be a valid month</p>
+            <label class="label lam" for="number">MONTH</label>
+            <input class="input mt" id="month" type="number" placeholder="MM" />
+            <p class="error-message">This field is required</p>
+            <p class="new-error girl">Must be a a valid month</p>
           </div>
           <div class="grid-div">
-            <label class="label" for="number">YEAR</label>
-            <input
-              class="input"
-              id="year"
-              type="number"
-              
-              placeholder="YYYY"
-              
-            />
-            <p id="yy-error" class="error-message">Must be in the past</p>
+            <label class="label lay" for="number">YEAR</label>
+            <input class="input yyy" id="year" type="number" maxlength="4" placeholder="YYYY" />
+            <p class="error-message">This field is required</p>
+            <p class="new-error grill">Must be in the past</p>
           </div>
         </div>
         <button class="btn">
@@ -66,16 +62,16 @@
           </svg>
         </button>
       </form>
-      
+
       <section class="section-123">
-        <hr id="hr">
+        <hr id="hr" />
       </section>
       <section class="calculated">
         <div class="span-div">
           <span class="new-span" id="year-span">--</span>
           <span class="span2">years </span>
         </div>
-        <div class="span-div">
+        <div class="span-div" id="month-div">
           <span class="new-span" id="month-span">--</span>
           <span class="span2">months</span>
         </div>
