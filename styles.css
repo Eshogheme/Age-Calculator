@@ -8,7 +8,7 @@
   src: url(Poppins-ExtraBoldItalic.ttf);
 }
  
-@media(min-width:1440px){
+@media(min-width:1400px){
   body {
     background-color: rgb(238, 235, 235);
     position: relative;
